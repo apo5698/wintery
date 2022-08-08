@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+rm -f ../db/schema.rb
+sudo service postgresql restart
+rails db:purge db:migrate db:schema:dump db:test:prepare
