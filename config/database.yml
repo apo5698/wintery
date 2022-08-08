@@ -82,4 +82,4 @@ test:
 #
 production:
   <<: *default
-  database: wintery
+  url: <%= ENV['DATABASE_URL'] %>
